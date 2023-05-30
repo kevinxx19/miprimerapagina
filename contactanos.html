@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>F.C Barcelona</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="brand">Mi página web</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contactanos.html">Contactanos</a></li>
+        </ul>
+      </nav>
+      <button id=15 class="button-menu-toggle">Menu</button>
+    </div>
+    </header>
+    
+<div>
+    <h1>CONTACTANOS</h1>
+    <P>¡Contáctanos para cualquier consulta o solicitud de información!</P>
+    <H2>Nuestras Redes</H2>
+    <ul>
+        <li>whatsApp</li>
+        <li>Instagram</li>
+        <li>Tik Tok</li>
+        <li>Facebook</li>
+    </ul>
+    <form action="procesar_formulario.php" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="pais">Pais:</label>
+        <select id="pais" name="pais" required>
+          <option value="">Seleccionar</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="mexico">México</option>
+          <option value="Peru">Perú</option>
+          <option value="Otros">Otros</option>
+        </select><br><br>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+        
+        <button onclick="showAlert()"> enviar </button>
+      </form>
+</div>
+              
+
+             
+            
+  </body>
+</html>
